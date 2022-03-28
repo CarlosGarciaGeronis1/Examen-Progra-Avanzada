@@ -9,7 +9,7 @@ int main() {
     }
 
     // ¿Por qué se imprimen alternados con 0 los numeros asignados en el for anterior?
-    // Por una macro define I2S(x) ((short *) x) que actua antes de que compile
+    // Por una macro define I2S(x) ((short *) x) que recursivamente la imprime en el printf
     for(i=0; i<10; i++) {
         printf("%d\n", *I2S(x+i));
     }
